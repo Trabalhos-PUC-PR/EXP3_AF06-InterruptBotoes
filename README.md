@@ -8,4 +8,4 @@ Esse programinha funciona lendo a resistencia do resistor do botão apertado, e 
 
 Acho que os professores aceitam o trabalho um pouco diferente do que eles pediram (6 LEDS, 2 interrupts, fiz com 8 LEDS, 1 interrupt)
 
-<img src="https://github.com/Trabalhos-PUC-PR/EXP3_AF06-InterruptBotoes/blob/main/Diagrama.png" width="75%" height="75%">
+<img src="https://github.com/Trabalhos-PUC-PR/EXP3_AF06-InterruptBotoes/blob/main/Diagrama2.png" width="75%" height="75%">
