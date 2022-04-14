@@ -12,37 +12,38 @@ void setup()
 
 void loop()
 {
+  Serial.println(analogRead(in));
 }
 
 void changeLed(){
   // até onde eu sei NENHUM desses digitalRead eram pra funcionar, 
   // mas se ta funcionando quem vai reclamar né?
   switch(analogRead(in)){
-    case(160):
+    case(189):
       digitalWrite(3, !digitalRead(3));
   	break;
-    case(168):
+    case(197):
       digitalWrite(4, !digitalRead(4));
   	break;
-    case(177):
+    case(207):
       digitalWrite(5, !digitalRead(5));
   	break;
-    case(186):
+    case(218):
       digitalWrite(6, !digitalRead(6));
   	break;
-    case(197):
+    case(230):
       digitalWrite(7, !digitalRead(7));
   	break;
-    case(208):
+    case(243):
       digitalWrite(8, !digitalRead(8));
   	break;
-    case(222):
+    case(258):
       digitalWrite(9, !digitalRead(9));
   	break;
-    case(236):
+    case(274):
       digitalWrite(10, !digitalRead(10));
   	break;
-    case(253):
+    case(293):
       allLow();
     break;
   }
