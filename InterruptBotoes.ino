@@ -4,53 +4,47 @@ void setup()
 {
   Serial.begin(9600);
   pinMode(in, INPUT);
-  for(int i=3; i < 11; i++){
+  for(int i=4; i < 10; i++){
   	pinMode(i, OUTPUT);
   }
-  attachInterrupt(digitalPinToInterrupt(2), changeLed, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(2), changeLed1, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(3), changeLed2, CHANGE);
 }
 
 void loop()
 {
+  // ----- DEBUG
   Serial.println(analogRead(in));
+  Serial.println(digitalRead(2));
+  Serial.println(digitalRead(3));
 }
 
-void changeLed(){
+void changeLed1(){
   // até onde eu sei NENHUM desses digitalRead eram pra funcionar, 
   // mas se ta funcionando quem vai reclamar né?
   switch(analogRead(in)){
-    case(189):
-      digitalWrite(3, !digitalRead(3));
-  	break;
-    case(197):
+    case(281):
       digitalWrite(4, !digitalRead(4));
   	break;
-    case(207):
+    case(293):
       digitalWrite(5, !digitalRead(5));
   	break;
-    case(218):
+    case(306):
       digitalWrite(6, !digitalRead(6));
   	break;
-    case(230):
-      digitalWrite(7, !digitalRead(7));
-  	break;
-    case(243):
-      digitalWrite(8, !digitalRead(8));
-  	break;
-    case(258):
-      digitalWrite(9, !digitalRead(9));
-  	break;
-    case(274):
-      digitalWrite(10, !digitalRead(10));
-  	break;
-    case(293):
-      allLow();
-    break;
   }
 }
 
-void allLow(){
-  for(int i=3; i < 11; i++){
-  	digitalWrite(i, LOW);
+void changeLed2(){
+  switch(analogRead(in)){ 
+  	case(321):
+      digitalWrite(7, !digitalRead(7));
+  	break;
+    case(336):
+      digitalWrite(8, !digitalRead(8));
+  	break;
+    case(353):
+      digitalWrite(9, !digitalRead(9));
+    break;
   }
 }
