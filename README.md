@@ -5,4 +5,4 @@ Construa um circuito com um Arduino, 6 LEDs e 6 botões de interrupção e corre
 
 ## NOTA!
 
-<img src="https://github.com/Trabalhos-PUC-PR/EXP3_AF06-InterruptBotoes/blob/interrupt6Botoes/Diagrama2.png" width="75%" height="75%">
+<img src="https://github.com/Trabalhos-PUC-PR/EXP3_AF06-InterruptBotoes/blob/6Botoes/Diagrama.png" width="75%" height="75%">
